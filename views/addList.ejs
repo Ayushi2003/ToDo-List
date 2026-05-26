@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Add List</title>
+    <link rel="stylesheet" href="public/css/editList.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Baloo+Bhai|Candal|Chewy&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="todo-container">
+      <form action="/save" method="POST">
+        <label for="title">Task Title</label>
+        <input
+          type="text"
+          id="title"
+          name="title"
+          placeholder="What have you planned?"/>
+        
+        <label for="description">Task Description</label>
+        <input type="text" id="description" name="description" placeholder="Describe your task"/>
+        <label for="time">Time</label>
+        <input type="time" id="time" name="time" />
+        <br /><br />
+        <button type="Submit" id="new-task-submit">Add Task</button>
+      </form>
+    </div>
+  </body>
+</html>
